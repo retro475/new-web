@@ -1,0 +1,3391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(46, 46, 46);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/*-------HEADER -----*/
+.header {
+  background-color: rgb(46, 46, 46);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 1vh 2vw;
+  border: 0px solid red;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head-container {
+  padding: 1vh;
+  border: 0px solid orange;
+  width: auto;
+}
+
+.head-container ul {
+  width: 100%;
+  border: 0px solid rgb(0, 255, 42);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head-container ul li {
+  list-style-type: none;
+  color: white;
+}
+
+.head-container ul li span {
+  font-weight: 700;
+  color: orange;
+}
+
+.head-container ul li a {
+  color: white;
+}
+
+.language-selector {
+  display: flex;
+}
+/*------- NAVBAR -----*/
+
+nav {
+  position: sticky;
+  top: 70px;
+  z-index: 99;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 3vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: white;
+  font-weight: 600;
+  padding: 0.5vh 0vw;
+  transition: all;
+  transition-duration: 0.3s;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0);
+}
+
+nav ul li a:hover {
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+}
+
+.menu-icon {
+  display: none;
+}
+
+/*------- DROPDOWN -----*/
+
+nav li ul.dropdown li {
+  display: block;
+  margin: 0.9vw;
+}
+
+nav li ul.dropdown {
+  text-align: left;
+  width: 180px;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  background-color: rgb(26, 26, 26);
+  border-radius: 5px;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+nav ul li a:hover {
+  color: orange;
+}
+
+.hero {
+  background-image: url(img/1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 88vh;
+  border: 0px solid red;
+  display: flex;
+}
+
+.hero-container .text {
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 40vh;
+  margin-left: 15vw;
+}
+.hero-container .text h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 50;
+}
+
+.hero-container .text a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(158, 158, 158);
+  width: 26%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5vh 1vw;
+  background-color: black;
+}
+
+.hero-container .text a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+/*------- HERO IMAGE -----*/
+
+/*------- WELCOME DRINK -----*/
+.welcome {
+  padding: 2vw;
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome li {
+  list-style-type: none;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.welcome li P {
+  font-size: 1rem;
+  letter-spacing: 0.5vw;
+}
+
+/*------- END WELCOME DRINK -----*/
+
+/*------- website contain -----*/
+
+.title {
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 3vw;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 2vw;
+}
+
+.line {
+  width: 55px;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid orange;
+}
+/* -----------------------------------------------PROJECT IMAGE---------------------------------------------------------------------- */
+
+.container {
+  display: flex;
+  padding: 3vw;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid red;
+}
+
+.img-container {
+  display: inline-flex;
+  width: 80%;
+  border: 0px solid purple;
+}
+
+.img-container img {
+  width: 100%;
+  border: 0px solid purple;
+}
+
+.img-container ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vw;
+  border: 0px solid yellow;
+}
+
+.img-container ul li {
+  list-style-type: none;
+}
+.image-zoom img {
+  transition: transform 0.2s;
+}
+
+.image-zoom p {
+  font-size: 26px;
+  border: 0px solid pink;
+  letter-spacing: 0.1em;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 1vh;
+}
+
+.image-zoom img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+/* -----------------------------------------------PARALLAX IMAGE---------------------------------------------------------------------- */
+
+.parallax-img {
+  border: 0px solid yellow;
+  justify-content: center;
+  /* The image used */
+  background-image: url("img/2.jpg");
+
+  /* Set a specific height */
+  min-height: 80vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-text {
+  justify-content: center;
+  display: flex;
+  background-color: orange;
+}
+
+.parallax-img .parallax-text p {
+  padding: 3vh;
+  background-color: orange;
+  width: 80%;
+  display: flex;
+  font-family: poppins;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* -----------------------------------------------ENDING PARALLAX IMAGE---------------------------------------------------------------------- */
+
+/* -----------------------------------------------CARD CONTAIN PAGE---------------------------------------------------------------------- */
+
+.card-content {
+  height: 14vh;
+  background-color: white;
+  justify-content: center;
+  border: 0px solid rgb(67, 241, 14);
+}
+
+.card-title {
+  padding: 2vw;
+  border: 0px solid red;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.card-title p {
+  font-size: 1em;
+}
+
+/* -----------------------------------------------LOGOBOX PAGE---------------------------------------------------------------------- */
+
+.logobox {
+  display: flex;
+  justify-content: center;
+}
+.logo-box {
+  border: 0px solid orangered;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box1 {
+  border: 0px solid orangered;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease-out, transform 1s ease-out;
+  margin-bottom: 0px;
+}
+.box1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.first-box {
+  border: 0px solid orangered;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+}
+
+.first-box .box1 img {
+  display: flex;
+}
+
+.second-box .box2 img {
+  display: flex;
+}
+
+.first-box h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first-box p {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+}
+
+.second-box {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+}
+
+.second-box h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second-box p {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+}
+
+.logobox .logo-box h3 {
+  color: orange;
+}
+
+.logobox .logo-box a h3:hover #arrow {
+  color: white;
+}
+
+/* -----------------------------------------------END CARD CONTAIN PAGE---------------------------------------------------------------------- */
+
+/*------- End website contain -----*/
+
+/* -----------------------------------------------FOOTER PAGE---------------------------------------------------------------------- */
+.footer-contain {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  border: 0px solid rgb(231, 13, 213);
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerbox {
+  border: 0px solid rebeccapurple;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6vw;
+  justify-content: space-between;
+}
+
+.footerbox1 .icon:hover {
+  color: orange;
+}
+
+.footerbox li {
+  list-style-type: none;
+  line-height: 5vh;
+  text-align: center;
+}
+
+.footerbox li h1 {
+  font-family: poppins;
+  font-size: 2rem;
+  color: orange;
+}
+
+.footerbox li a {
+  font-family: poppins;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.footerbox .footerbox1 li {
+  text-align: left;
+}
+
+.footerbox .footerbox2 li {
+  text-align: right;
+}
+
+.footerbox1 .icon {
+  display: inline-flex;
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  font-size: 2rem;
+}
+
+.footerbox1 .icon:hover {
+  background-color: #0a0a0a;
+}
+
+.footerbox2 li:hover #gems {
+  color: orange;
+}
+
+.copy {
+  background-color: orange;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy p {
+  font-family: poppins;
+}
+
+#myBtn {
+  position: fixed;
+  display: none;
+  bottom: 0vh;
+  right: 1vw;
+  z-index: 99;
+  cursor: pointer;
+  padding: 5vh;
+}
+
+/* Large devices (Laptop kecil, ≤ 1024px) */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  /* CSS untuk laptop kecil */
+
+  nav {
+    position: sticky;
+    top: 67px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 55vh;
+    margin-left: 5vw;
+  }
+  .logo-box {
+    border: 0px solid orangered;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .footer-contain {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    border: 0px solid rgb(231, 13, 213);
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    border: 0px solid rebeccapurple;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6vw;
+    justify-content: space-between;
+  }
+
+  .footerbox1 .icon:hover {
+    color: orange;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox li h1 {
+    font-family: poppins;
+    font-size: 2rem;
+    color: orange;
+  }
+
+  .footerbox li a {
+    font-family: poppins;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: left;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: right;
+  }
+
+  .footerbox1 .icon {
+    display: inline-flex;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    font-size: 2rem;
+  }
+
+  .footerbox1 .icon:hover {
+    background-color: #0a0a0a;
+  }
+
+  .footerbox2 li:hover #gems {
+    color: orange;
+  }
+
+  .copy {
+    background-color: orange;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copy p {
+    font-family: poppins;
+  }
+
+  #myBtn {
+    position: fixed;
+    display: none;
+    bottom: 0vh;
+    right: 1vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 5vh;
+  }
+}
+
+/* Medium devices (Tablet, ≤ 768px) */
+@media only screen and (max-width: 960px) and (orientation: portrait) {
+  /* CSS untuk tablet */
+
+  nav {
+    position: sticky;
+    top: 67px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 55vh;
+    margin-left: 5vw;
+  }
+  .logo-box {
+    border: 0px solid orangered;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+/* Medium devices (Tablet, ≤ 854px) */
+@media only screen and (max-width: 854px) and (orientation: portrait) {
+  /* CSS untuk tablet */
+
+  nav {
+    position: sticky;
+    top: 67px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 55vh;
+    margin-left: 5vw;
+  }
+  .logo-box {
+    border: 0px solid orangered;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+/* Medium devices (Tablet, ≤ 768px) */
+@media only screen and (max-width: 830px) and (orientation: portrait) {
+  /* CSS untuk tablet */
+
+  nav {
+    position: sticky;
+    top: 85px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 55vh;
+    margin-left: 5vw;
+  }
+  .logo-box {
+    border: 0px solid orangered;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+/* Medium devices (Tablet, ≤ 768px) */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  /* CSS untuk tablet */
+
+  nav {
+    position: sticky;
+    top: 86px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 55vh;
+    margin-left: 5vw;
+  }
+  .logo-box {
+    border: 0px solid orangered;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+/* Medium devices (Tablet, ≤ 630px*/
+@media only screen and (max-width: 630px) and (orientation: portrait) {
+  /* CSS untuk tablet */
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 55vh;
+    margin-left: 5vw;
+  }
+  nav {
+    position: sticky;
+    top: 86px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+
+  .logo-box {
+    border: 0px solid orangered;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+/* Small devices (HP standar, ≤ 480px) */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  /* CSS untuk HP */
+
+  .header {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 86px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 15vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 470px) and (orientation: portrait) {
+  /* CSS untuk HP */
+  /* Extra small devices (HP kecil, ≤ 360px) */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 85px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 15vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 460px) and (orientation: portrait) {
+  /* CSS untuk HP */
+  /* Extra small devices (HP kecil, ≤ 360px) */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 85px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 15vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 440px) and (orientation: portrait) {
+  /* CSS untuk HP */
+  /* Extra small devices (HP kecil, ≤ 360px) */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 104px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 15vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 430px) and (orientation: portrait) {
+  /* CSS untuk HP */
+  /* Extra small devices (HP kecil, ≤ 360px) */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 104px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 15vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+  /* CSS untuk HP */
+  /* Extra small devices (HP kecil, ≤ 360px) */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 124px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 15vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 390px) and (orientation: portrait) {
+  /* CSS khusus untuk HP kecil */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 119px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 20vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 370px) and (orientation: portrait) {
+  /* CSS khusus untuk HP kecil */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 118px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 20vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+  /* CSS khusus untuk HP kecil */
+
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 138px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 20vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  /* CSS khusus untuk HP kecil */
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 137px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 20vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+  /* CSS khusus untuk HP kecil */
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 137px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 20vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  /* CSS khusus untuk HP kecil */
+  .header {
+    align-items: left;
+    justify-content: left;
+  }
+
+  .head-container ul {
+    width: 100%;
+    border: 0px solid rgb(0, 255, 42);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  nav {
+    position: sticky;
+    top: 137px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav li ul.dropdown {
+    border: 0px solid red;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    z-index: 999;
+    display: none;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-container .text {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40vh;
+    margin-left: 5vw;
+  }
+
+  .title {
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 3vw;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2vw;
+  }
+
+  .card-content {
+    height: 20vh;
+    background-color: white;
+    justify-content: center;
+    border: 0px solid rgb(67, 241, 14);
+  }
+
+  .first-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+  }
+  .second-box {
+    border: 0px solid rgb(55, 32, 160);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0px;
+  }
+  .first-box .box1 img {
+    display: flex;
+    width: 100%;
+  }
+
+  .second-box .box2 img {
+    display: flex;
+
+    width: 100%;
+  }
+
+  .first-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .second-box h1 {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .first-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .second-box p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+  }
+
+  .footer {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerbox {
+    justify-content: center;
+  }
+
+  .footerbox li {
+    list-style-type: none;
+    line-height: 5vh;
+    text-align: center;
+  }
+
+  .footerbox .footerbox1 li {
+    text-align: center;
+  }
+
+  .footerbox .footerbox2 li {
+    text-align: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vh;
+    right: 2vw;
+    z-index: 99;
+    cursor: pointer;
+    padding: 0vh;
+    border-radius: 4px;
+  }
+}
